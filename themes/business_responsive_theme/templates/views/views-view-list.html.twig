@@ -18,22 +18,19 @@
  * @ingroup themeable
  */
 #}
-
 {% if attributes -%}
-  <div{{ attributes }}>
-{% endif %}
-  {% if title %}
-    <h3>{{ title }}</h3>
-  {% endif %}
-
-  <{{ list.type }} {{ list.attributes }} {{ list.type == 'ul' ? 'class="arrow_list"' : ''}} >
-
-    {% for row in rows %}
-      <li{{ row.attributes }}>{{ row.content }}</li>
-    {% endfor %}
-
-  </{{ list.type }}>
-
-{% if attributes -%}
-  </div>
+    <div{{attributes}}>
+    {% endif %}
+    {% if title %}
+        <h3>
+            {{ title }}</h3>
+    {% endif %}
+    <{{list.type}} {{ list.attributes }} {{ list.type == 'ul' ? 'class="arrow_list"' : ''}}>
+        {% for row in rows %}
+            <li{{row.attributes}}>
+                {{ row.content }}</li>
+        {% endfor %}
+    </{{list.type}}>
+    {% if attributes -%}
+    </div>
 {% endif %}

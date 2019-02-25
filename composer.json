@@ -6,7 +6,19 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drush/drush": "^9.5"
+        "drush/drush": "^9.5",
+        "drupal/geolocation": "^1.11",
+        "drupal/field_group": "^1.0",
+        "drupal/search_api": "^1.11",
+        "drupal/contact_block": "^1.4",
+        "drupal/sharethis": "^2.0@beta",
+        "drupal/fb_likebox": "^2.0",
+        "drupal/imagefield_slideshow": "^1.8",
+        "drupal/colorbox": "^1.4",
+        "drupal/juicebox": "^2.0@beta",
+        "drupal/libraries": "^3.0@alpha",
+        "drupal/taxonomy_delete": "^1.0",
+        "drupal/devel": "^1.2"
     },
     "replace": {
         "drupal/core": "^8.6"
