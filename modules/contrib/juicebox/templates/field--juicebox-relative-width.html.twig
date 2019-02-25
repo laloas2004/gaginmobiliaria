@@ -30,7 +30,7 @@
   {% endfor %}
 {% else %}
   <div{{ attributes }}>
-    <div{{ title_attributes }}>{{ label }}</div>
+    <div{{ title_attributes }}></div>
     {% for item in items %}
       <div{{ item.attributes }}>{{ item.content }}</div>
     {% endfor %}

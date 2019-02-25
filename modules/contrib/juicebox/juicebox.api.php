@@ -24,7 +24,7 @@ function hook_juicebox_gallery_alter($gallery, $data) {
   if (strpos($gallery->getId(), 'field') === 0) {
     foreach ($gallery->getImages() as $key => $image) {
       // Add some static text to all title values and write changes back.
-      $image['title'] .= ' &copy; 2014';
+      $image['title'] .= '';
       $gallery->updateImage($key, $image['src_data'], $image['title'], $image['caption']);
     }
   }

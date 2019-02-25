@@ -2,14 +2,7 @@
   display: none;
 }
 
-.fix-sidebar-second {
-
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border: 1px solid #787878;
-
-}
+.fix-sidebar-second {}
 
 .form-type-select {
   width: 85%;
@@ -34,4 +27,229 @@
 
 }
 
+.location-title {
+  font-size: 18px;
+}
 
+.form-item-field-ciudad-target-id {
+
+  width: 40%;
+
+}
+
+.form-item-field-operacion-value,
+.form-item-field-tipo-de-inmueble-target-id {
+  width: 20%;
+
+}
+
+#content-top {
+  background-color: black;
+}
+
+.view-display-id-page_1 .view-filters {
+  padding: 15px;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border: 1px solid #757575;
+
+}
+
+.view-display-id-page_1 .view-content {
+  padding: 15px;
+}
+
+
+.view-display-id-page_1 .view-content .views-row {
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border: 0px solid #838383;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin-top: 5px;
+}
+
+.views-field-field-imagenes {
+  float: left;
+  display: block;
+  margin: 5px;
+  min-width: 230px;
+
+}
+
+.views-field-field-imagenes ul {
+  list-style: none;
+}
+
+.views-label {
+  font-weight: bold;
+  width: 50%;
+}
+
+.views-field {}
+
+.field-content {
+  display: inline;
+}
+
+.views-field-field-recamaras {}
+
+
+.sidebar-second {
+  padding: 20px;
+  background-color: #F2F2F2;
+}
+
+.field--name-field-ubicacion .field__label,
+.field--name-body .field__label {
+  border-top: 0px solid #ababab;
+  border-right: 0px solid #ababab;
+  border-bottom: 1px solid #ababab;
+  border-left: 0px solid #ababab;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.field--name-body {
+  margin-top: 30px;
+}
+
+.field--name-field-operacion .field__label,
+.field--name-field-operacion .field__item {
+  display: inline;
+}
+
+.field--name-field-precio .field__label,
+.field--name-field-precio .field__item {
+  display: inline;
+}
+
+.field--name-field-tipo-de-inmueble .field__label,
+.field--name-field-tipo-de-inmueble .field__item {
+  display: inline;
+}
+
+.field--name-field-recamaras .field__label,
+.field--name-field-recamaras .field__item {
+  display: inline;
+}
+
+.field--name-field-banos .field__label,
+.field--name-field-banos .field__item {
+  display: inline;
+}
+
+.field--name-field-mts-terreno div {
+  display: inline;
+}
+
+.field--name-field-mts-contruccion div {
+  display: inline;
+}
+
+.field--name-field-ciudad div {
+  display: inline;
+}
+
+
+.field--entity-reference-target-type-taxonomy-term,
+.field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: unset;
+}
+
+.ficha-tipo {
+  height: 160px;
+  padding-top: 65px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  min-width: 340px;
+  border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  border: 0px solid #000000;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.ficha-tipo a {
+
+  color: white;
+
+}
+
+.ficha-tipo:hover {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  transform: scale(1.1);
+}
+
+#tipo-desarrollos {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../../../sites/default/files/casa1.png')
+}
+
+
+
+#tipo-casas {
+  background-image: url('../../../../sites/default/files/casa2.png')
+}
+
+#tipo-deptos {
+  background-image: url('../../../../sites/default/files/casa3.png')
+}
+
+#tipo-locales {
+  background-image: url('../../../../sites/default/files/casa4.png')
+}
+
+#tipo-oficinas {
+  background-image: url('../../../../sites/default/files/casa5.png')
+}
+
+#tipo-terrenos {
+  background-image: url('../../../../sites/default/files/casa6.png')
+}
+
+
+.view-id-nuevas_propiedades .view-content {
+  height: 400px;
+  overflow: hidden;
+}
+
+.view-id-nuevas_propiedades .item-list {}
+
+.view-id-nuevas_propiedades .item-list ul li {
+  float: left;
+  list-style: none;
+  margin-left: 1%;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.view-id-nuevas_propiedades .item-list ul {}
+
+.fila-nueva-propiedad {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #dbdbdb;
+  width: 24%;
+  min-height: 315px;
+}
+
+.content-top__section {
+  padding: 10px 0;
+
+}

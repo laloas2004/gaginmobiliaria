@@ -4,7 +4,7 @@
  */
 .form-item,
 .form-actions {
-  margin: 20px 0;
+  margin: 5px 0;
 }
 input.form-text,
 input.form-tel,
@@ -51,7 +51,8 @@ select {
   box-shadow: none;
 }
 select {
-  margin: 10px 0;
+  margin: 5px 0;
+  padding: 5px 10px !important;
 }
 
 /*webkit specific rules for select list*/
