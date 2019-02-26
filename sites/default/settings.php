@@ -303,7 +303,7 @@ $settings['hash_salt'] = 'gR03T9NfDodC_ZWIS4Dsy7JXdM6pj0fqoeHIBIsNHaubBtywWlGWw3
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = false;
 
 /**
  * External access proxy settings:
@@ -765,9 +765,9 @@ $settings['entity_update_batch_size'] = 50;
  * Keep this code block at the end of this file to take full effect.
  */
 #
- if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-   include $app_root . '/' . $site_path . '/settings.local.php';
- }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
 
 /*$databases['default']['default'] = array (
   'database' => 'inmobiliaria2',
@@ -782,16 +782,15 @@ $settings['entity_update_batch_size'] = 50;
 */
 
 
-$databases['default']['default'] = array (
+$databases['default']['default'] = array(
   'database' => 'websiete_inmobiliaria',
   'username' => 'websiete_inmobi',
   'password' => 'websiete2019',
   'prefix' => '',
-  'host' => 'inmobiliariagag18.com',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 
 $config_directories['sync'] = 'sites/default/files/config_78PojnKy5eaWZaX3bgYZ7Usye2Rg86GzSNuLs40xenE60qO187wWRycF5pYVUmfo4Czckv7ohQ/sync';
-
