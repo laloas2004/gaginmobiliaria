@@ -70,6 +70,7 @@
   padding: 10px;
   background-color: #eeeeee;
   margin-top: 5px;
+  min-height: 250px;
 }
 
 .views-field-field-imagenes {
