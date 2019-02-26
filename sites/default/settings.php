@@ -769,7 +769,7 @@ $settings['entity_update_batch_size'] = 50;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 
-$databases['default']['default'] = array (
+/*$databases['default']['default'] = array (
   'database' => 'inmobiliaria2',
   'username' => 'root',
   'password' => '',
@@ -779,5 +779,19 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+*/
+
+
+$databases['default']['default'] = array (
+  'database' => 'websiete_inmobiliaria',
+  'username' => 'websiete_inmobi',
+  'password' => 'websiete2019',
+  'prefix' => '',
+  'host' => 'inmobiliariagag18.com',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
 $config_directories['sync'] = 'sites/default/files/config_78PojnKy5eaWZaX3bgYZ7Usye2Rg86GzSNuLs40xenE60qO187wWRycF5pYVUmfo4Czckv7ohQ/sync';
 
