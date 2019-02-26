@@ -117,7 +117,13 @@ class ContextHandler implements ContextHandlerInterface {
     // If there are any mappings that were not satisfied, throw an exception.
     // This is a more severe problem than missing values, so check and throw
     // this first.
+
+
+
     if (!empty($mappings)) {
+
+      var_dump($mappings);
+
       throw new ContextException('Assigned contexts were not satisfied: ' . implode(',', array_keys($mappings)));
     }
 

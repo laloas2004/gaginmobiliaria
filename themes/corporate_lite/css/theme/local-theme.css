@@ -253,3 +253,16 @@
   padding: 10px 0;
 
 }
+
+#jb-glry-id-0>div>div:nth-child(4) {}
+
+
+#main-content {
+  background-color: #FAFAFA !important;
+}
+
+.container {
+
+  background-color: white !important;
+
+}

@@ -770,7 +770,7 @@ $settings['entity_update_batch_size'] = 50;
  }
 
 $databases['default']['default'] = array (
-  'database' => 'inmobiliaria',
+  'database' => 'inmobiliaria2',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
