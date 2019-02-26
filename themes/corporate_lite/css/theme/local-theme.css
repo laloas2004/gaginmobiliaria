@@ -224,7 +224,7 @@
 
 
 .view-id-nuevas_propiedades .view-content {
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
 }
 
@@ -265,5 +265,35 @@
 .container {
 
   background-color: white !important;
+
+}
+
+
+@media (max-width: 767px) {
+
+  .fila-nueva-propiedad {
+
+    width: 90%;
+    margin-left: 5% !important;
+  }
+
+  .views-field {
+    clear: both;
+    width: 100%;
+  }
+
+  .view-id-nuevas_propiedades .item-list ul li {
+    margin-top: 10px;
+  }
+
+  .form-item-field-ciudad-target-id {
+    width: 100%;
+  }
+
+  .form-item-field-operacion-value,
+  .form-item-field-tipo-de-inmueble-target-id {
+    width: 100%;
+  }
+
 
 }
