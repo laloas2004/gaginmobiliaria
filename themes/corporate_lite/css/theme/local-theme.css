@@ -269,6 +269,10 @@
 
 }
 
+.views-field-title a {
+  font-size: 18px !important;
+}
+
 
 @media (max-width: 767px) {
 
@@ -295,6 +299,12 @@
   .form-item-field-tipo-de-inmueble-target-id {
     width: 100%;
   }
+
+  .ficha-tipo {
+    width: initial;
+  }
+
+
 
 
 }
