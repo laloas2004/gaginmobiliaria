@@ -769,7 +769,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-/*$databases['default']['default'] = array (
+$databases['default']['default'] = array (
   'database' => 'inmobiliaria2',
   'username' => 'root',
   'password' => '',
@@ -779,7 +779,9 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-*/
+
+
+/*
 
 
 $databases['default']['default'] = array(
@@ -791,6 +793,6 @@ $databases['default']['default'] = array(
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-);
+);*/
 
 $config_directories['sync'] = 'sites/default/files/config_78PojnKy5eaWZaX3bgYZ7Usye2Rg86GzSNuLs40xenE60qO187wWRycF5pYVUmfo4Czckv7ohQ/sync';

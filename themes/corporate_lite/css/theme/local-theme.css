@@ -273,6 +273,15 @@
   font-size: 18px !important;
 }
 
+.view-empty {
+  min-height: 200px;
+  padding-top: 100px;
+  text-align: center;
+  background-color: #eeeeee;
+  margin: 10px;
+  font-size: 20px;
+}
+
 
 @media (max-width: 767px) {
 
