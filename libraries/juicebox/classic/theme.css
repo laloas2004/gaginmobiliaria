@@ -163,7 +163,14 @@ div.jb-panel-top {
   height: 100%;
   /* for gallery preloader */
   width: 100%;
+  z-index:90 !important;
 }
+#jb-glry-id-0 > div > div:nth-child(4){
+    display: none !important;
+    visibility: hidden;
+}
+
+
 
 .juicebox-gallery .jb-idx-thb-container {
   margin-left: auto;
