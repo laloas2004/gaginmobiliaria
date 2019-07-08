@@ -1,0 +1,1 @@
+[08-Mar-2019 01:39:41 America/Chicago] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 32 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleWatchNode.php on line 40

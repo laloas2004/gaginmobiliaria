@@ -1,0 +1,191 @@
+<?php
+
+/* modules/superfish/templates/superfish-menu-items.html.twig */
+class __TwigTemplate_92b41b7569067fd63b0e24cea0dec8ddeaf40e8bacdf8af12c6147f0312ed762 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $tags = ["set" => 22, "spaceless" => 23, "for" => 24, "if" => 26];
+        $filters = [];
+        $functions = [];
+
+        try {
+            $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
+                ['set', 'spaceless', 'for', 'if'],
+                [],
+                []
+            );
+        } catch (Twig_Sandbox_SecurityError $e) {
+            $e->setSourceContext($this->getSourceContext());
+
+            if ($e instanceof Twig_Sandbox_SecurityNotAllowedTagError && isset($tags[$e->getTagName()])) {
+                $e->setTemplateLine($tags[$e->getTagName()]);
+            } elseif ($e instanceof Twig_Sandbox_SecurityNotAllowedFilterError && isset($filters[$e->getFilterName()])) {
+                $e->setTemplateLine($filters[$e->getFilterName()]);
+            } elseif ($e instanceof Twig_Sandbox_SecurityNotAllowedFunctionError && isset($functions[$e->getFunctionName()])) {
+                $e->setTemplateLine($functions[$e->getFunctionName()]);
+            }
+
+            throw $e;
+        }
+
+        // line 21
+        echo "
+";
+        // line 22
+        $context["classes"] = [];
+        // line 23
+        ob_start();
+        // line 24
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["menu_items"]) ? $context["menu_items"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+            // line 25
+            echo "
+  ";
+            // line 26
+            if ( !twig_test_empty($this->getAttribute($context["item"], "children", [], "array"))) {
+                // line 27
+                echo "    ";
+                $context["item_class"] = ($this->getAttribute($context["item"], "item_class", []) . " menuparent");
+                // line 28
+                echo "    ";
+                if ($this->getAttribute($context["item"], "multicolumn_column", [], "array")) {
+                    // line 29
+                    echo "      ";
+                    $context["item_class"] = ((isset($context["item_class"]) ? $context["item_class"] : null) . " sf-multicolumn-column");
+                    // line 30
+                    echo "    ";
+                }
+                // line 31
+                echo "  ";
+            }
+            // line 32
+            echo "
+  <li id=\"";
+            // line 33
+            echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "id", []), "html", null, true));
+            echo "\"
+    ";
+            // line 34
+            if ($this->getAttribute($context["item"], "item_class", [], "array")) {
+                echo " class=\"";
+                echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "item_class", [], "array"), "html", null, true));
+                echo "\"";
+            }
+            echo ">
+    ";
+            // line 35
+            if ($this->getAttribute($context["item"], "multicolumn_column", [], "array")) {
+                // line 36
+                echo "    <div class=\"sf-multicolumn-column\">
+    ";
+            }
+            // line 38
+            echo "    ";
+            if ( !twig_test_empty($this->getAttribute($context["item"], "children", [], "array"))) {
+                // line 39
+                echo "      ";
+                echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "link_menuparent", [], "array"), "html", null, true));
+                echo "
+    ";
+            } else {
+                // line 41
+                echo "      ";
+                echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "link", [], "array"), "html", null, true));
+                echo "
+    ";
+            }
+            // line 43
+            echo "    ";
+            if ($this->getAttribute($context["item"], "multicolumn_wrapper", [], "array")) {
+                echo "<ul class=\"sf-multicolumn\">
+    <li class=\"sf-multicolumn-wrapper ";
+                // line 44
+                echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "item_class", [], "array"), "html", null, true));
+                echo "\">
+    ";
+            }
+            // line 46
+            echo "    ";
+            if ( !twig_test_empty($this->getAttribute($context["item"], "children", [], "array"))) {
+                // line 47
+                echo "      ";
+                if ($this->getAttribute($context["item"], "multicolumn_content", [], "array")) {
+                    echo "<ol>";
+                } else {
+                    echo "<ul>";
+                }
+                // line 48
+                echo "      ";
+                echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($context["item"], "children", [], "array"), "html", null, true));
+                echo "
+      ";
+                // line 49
+                if ($this->getAttribute($context["item"], "multicolumn_content", [], "array")) {
+                    echo "</ol>";
+                } else {
+                    echo "</ul>";
+                }
+                // line 50
+                echo "    ";
+            }
+            // line 51
+            echo "    ";
+            if ($this->getAttribute($context["item"], "multicolumn_wrapper", [], "array")) {
+                echo "</li></ul>";
+            }
+            // line 52
+            echo "    ";
+            if ($this->getAttribute($context["item"], "multicolumn_column", [], "array")) {
+                echo "</div>";
+            }
+            // line 53
+            echo "  </li>
+
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+    }
+
+    public function getTemplateName()
+    {
+        return "modules/superfish/templates/superfish-menu-items.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  154 => 53,  149 => 52,  144 => 51,  141 => 50,  135 => 49,  130 => 48,  123 => 47,  120 => 46,  115 => 44,  110 => 43,  104 => 41,  98 => 39,  95 => 38,  91 => 36,  89 => 35,  81 => 34,  77 => 33,  74 => 32,  71 => 31,  68 => 30,  65 => 29,  62 => 28,  59 => 27,  57 => 26,  54 => 25,  50 => 24,  48 => 23,  46 => 22,  43 => 21,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("", "modules/superfish/templates/superfish-menu-items.html.twig", "/home3/websiete/public_html/inmobiliariagag18.com/gaginmobiliaria/modules/superfish/templates/superfish-menu-items.html.twig");
+    }
+}
